@@ -449,64 +449,67 @@ Playfair Display - 400
     }
   /* -------------------- Fonts end-------------------- */
   
-  html{
-      box-sizing: border-box;
-  }
-  *,*::before,*::after {
-      box-sizing: inherit;
-  }
-/* -------------------- Fonts end-------------------- */
-
-/* -------------------- header start-------------------- */
+  /* -------------------- Header start-------------------- */
 
 .header{
-    position: fixed;
-    /* background-color: darkgreen; */
-    width: 100vw;;
+    /* background: linear-gradient(green, black); */
+    /* opacity: .5; */
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    padding-top: 2.85vh;
 }
-/* .header{
-    background-color: #000;
-} */
+
 .header_wrapper{
- display: flex;
- justify-content: space-evenly;
- padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: grey !important; */
+    /* opacity: 0.3; */
+    width: 100%;
+
+}
+
+.home_left_pane{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid rgb(42, 106, 165); */
+    
+    /* background-color: grey !important; */
+    width: 20%;
 }
 .social_links{
-    margin-top: 12px;
-}
-.links_with_brand{
-    position: absolute;
     display: flex;
-    align-items: center;
-    transform: translate(-153px)
+    justify-content: center;
+    width: 100%;
+}
+.social_link{
+    padding: 0 1vw;
 }
 .brand_name{
+    transform: translate(-19px);
     color: #FFFFFF;
-    margin-left: 433px;
     font-family: "Open Sans Condensed";
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
 }
-.header_main_wrapper{
-    flex: 1;
+
+.home_right_pane{
+    /* border: 1px solid rgb(233, 27, 27); */
 
     display: flex;
     justify-content: space-between;
-    width: auto;
+    align-items: center;
+    /* background-color: salmon !important; */
+    width: 60%;
+
 }
-.header_blank{
-    flex: 3;
-    width: 20px;
-    height: 20px;
-}
-.header_main{
+.brand_with_line{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1043px;
 }
 .header_line{
     width: 355px;
@@ -514,51 +517,65 @@ Playfair Display - 400
     left: 335px;
     border: 1px solid #FFC94B;
 }
-.header_nav{
-    display: none;
-}
-.header_nav_show{
-    display: block;
-}
+/* body{
+    background-color: skyblue !important;
+    border: 1px solid red;
+} */
 
-.home_pic_div{
-    /* display: grid; */
-    /* height: 100%; */
-}
-/* TODO: change it to apply to whole head wrapper or whatever it is */
-.home_pic{
-    /* margin-top: 39px; */
-    max-width: 100vw;
-    max-height: 100vh;
-    /* margin: auto; */
-}
-
-/* -------------------- header end-------------------- */
-
-/* -------------------- main start-------------------- */
-.home_view_main{
-    display: flex;
-    justify-content: space-between;
-    /* width: 1043px;
-    height: 724px; */
-    width: 100vw;
-    height: 100vh;
-    /* background-color: darkgreen; */
-
-}
-
+/* -------------------- Header end-------------------- */
+/* -------------------- Main start-------------------- */
 .main_blackbg{
-    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
     height: 747px;
     background-color: #0E1B1B;
 }
+
+.main{
+    width: 100%;
+}
+.home_section{
+    width: 100%;
+
+}
+
+.main_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 747px;
+}
+
 .main_logo{
+    position: relative;
     margin-top: 45px;
     margin-left: 83px;
 }
-
 .main_logo_pic{
-    width: 200px; /*300px; */
-    height: 159px; /*239px;*/
+    width: 100%; /*300px; */
+    height: auto; /*239px;*/
 }
-/* -------------------- main end-------------------- */
+
+.main_pic_div{
+    width: auto;
+    padding-top: 4.65vh;
+}
+
+.home_pic{
+    position: relative;
+    width: 100%;
+}
+  /* -------------------- Main end-------------------- */
+
+ /* * { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 2px dotted orange }
+* * * * { outline: 2px dotted blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue } */
