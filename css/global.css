@@ -453,7 +453,8 @@ Playfair Display - 400
   .black_bckgrnds{
     position: absolute;
     width: 100%;
-    height: 747px;
+    height: 94vh;
+    /* height: 747px; */
     background-color: #0E1B1B;
 }
 .main_blackbg{
@@ -462,7 +463,7 @@ Playfair Display - 400
     justify-content: center;
     align-items: flex-start; */
     width: 100%;
-    height: 747px;
+    height: 94vh;
     background-color: #0E1B1B;
 }
 .about_blackbg{
@@ -558,6 +559,7 @@ Playfair Display - 400
 }
 .home_section{
     width: 100%;
+    height: 100vh;
 }
 
 .main_wrapper{
@@ -737,8 +739,134 @@ Playfair Display - 400
     /* text-decoration: underline; */
     background: rgba(255, 201, 75, 0.7);
 }
+.work_title_div{
+    width: auto;
+}
+.work_title{
+    font-family: "Playfair Display";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(14, 27, 27, 1);
+    background: transparent url(../img/svg/workTitleLine.svg) no-repeat left center;
+    background-size: 305px;
+    border: 0;
+    margin-bottom: 26px;
+    padding-left: 325px;
+}
+
+.work_title_notetxt{
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(14, 27, 27, 1);
+
+    padding-left: 135px;
+}
+.work_slider_div{
+    display: flex;
+
+}
+.work_slider{
+    display: flex;
+    
+}
+.wrk_imgOne_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+}
+.worksldr_cntr{
+    font-family: Open Sans;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 163px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(14, 27, 27, 0.1);
+
+    padding-bottom: 14px;
+}
+
+.worksldr_imgone_div{
+    position: relative;
+    z-index: 1;
+    justify-self: flex-start;
+    align-self: flex-end;
+}
+
+.worksldr_imgtwo_div{
+    justify-self: flex-start;
+    align-self: flex-end;
+    padding-bottom: 82px;
+    transform: translate(-100px);
+}
+.work_slider_cptn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+}
+.worksldr_cptnTtl{
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.work_slider_txt{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0E1B1B;
+    }
+
+    /* .work_sldr_nav{
+    backgrozund: transparent url(../img/svg/work_nav_line.svg) no-repeat;
+    } */
+    .work_sldr_next{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #0E1B1B;
+        text-decoration: none;
+
+        background: transparent url(../img/svg/work_nav_line.svg) no-repeat left center;
+        padding-left: 90px;
+    }
+    .work_sldr_prev{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #0E1B1B;
+        text-decoration: none;
+        
+        background: transparent url(../img/svg/work_nav_line.svg) no-repeat right center;
+        padding-right: 90px;
+        
+    }
 /* -------------------- Main end-------------------- */
   
+
 /* -------------------- Outlines start-------------------- */
 /* * { outline: 2px dotted red }
 * * { outline: 2px dotted green }
