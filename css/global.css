@@ -453,17 +453,13 @@ Playfair Display - 400
   .black_bckgrnds{
     position: absolute;
     width: 100%;
-    height: 94vh;
-    /* height: 747px; */
     background-color: #0E1B1B;
 }
 .main_blackbg{
     position: relative;
-    /* display: flex;
-    justify-content: center;
-    align-items: flex-start; */
     width: 100%;
-    height: 94vh;
+    height: 50vw;
+    max-height: 91vh; 
     background-color: #0E1B1B;
 }
 .about_blackbg{
@@ -473,7 +469,7 @@ Playfair Display - 400
     justify-content: center;
     align-items: flex-start;
     width: 89.7%;
-    height: 70vh;
+    height: 37vw;
     background-color: #070F0F;
 }
   .header{
@@ -518,7 +514,7 @@ Playfair Display - 400
     font-family: "Open Sans Condensed";
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2vw;
     line-height: 44px;
 
 }
@@ -537,7 +533,7 @@ Playfair Display - 400
     align-items: center;
 }
 .header_line{
-    width: 355px;
+    width: 22.2vw;
     height: 0px;
     left: 335px;
     border-bottom: 1px solid rgba(255, 201, 75, 0.8);/*#FFC94B;*/
@@ -637,6 +633,7 @@ Playfair Display - 400
 .main_pic_div{
     width: auto;
     padding-top: 4.65vh;
+    width: 65.2vw;
 }
 
 .home_pic{
@@ -650,6 +647,7 @@ Playfair Display - 400
     width: 89.7%;
     height: 75vh;
     border: 0;
+    margin-bottom: 100px;
 }
 .about_pic_div{
     width: auto;
@@ -740,6 +738,8 @@ Playfair Display - 400
     letter-spacing: 0em;
     text-align: center;
     color: rgba(0, 0, 0, 1);
+    text-decoration: underline;
+    text-decoration-color: #bf9738;
 }
 
 .about_rdmbtn:hover{
@@ -782,53 +782,56 @@ Playfair Display - 400
 
     padding-left: 135px;
 }
-.work_slider_div{
-    /* display: flex; */
 
-}
-.work_slider{
-    float: left;
-    position: relative;
+.work_sldr_and_Cptn{
     display: flex;
-    padding: 15px;
-    width: 55%;
-}  
-.wrk_imgOne-cntr{
-    display: block;
-    flex-direction: column;
-    /* justify-content: flex-end;  */
-    align-items: center;
-    width: 45%;
+    /* display: inline-block; */
+    /* flex: 1; */
+    align-items: flex-end;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    margin-right: 0px;
 }
 
-.worksldr_cntr{
+.work_slider{
+    /* float: left; */
+    position: relative;
+    /* display: flex; */
+    padding: 15px;
+    /* width: 75%; */
+    flex: 1.1 1.1 600px;
+
+}  
+.wrk_imgOneAndcntr{ 
+    position: relative;
+    margin-top: 48px; /*TODO: make it percents*/
+    display: block;
+    float: left;
+    width: 45.7%;
+}
+
+.wrk_imgOneAndcntr p{
     font-family: "Open Sans";
-     font-size: 6.3vw;/*120px; */
+    font-size: 7.7vw;
     font-style: normal;
     font-weight: 300;
-    line-height: 163px;
-    letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: rgba(14, 27, 27, 0.1);
-    margin-left: 32.6%;
-    margin-bottom: -10px;
+    
+    margin-bottom: 8.5%;
 }
-.worksldr_imgone_div{
+
+.worksldr_imgone_pic{
     position: relative;
     z-index: 1;
-    justify-self: flex-start;
-    align-self: flex-end;
     width: 100%;
 }
-.worksldr_imgone_pic{
-    width: 268%;
-}
 .worksldr_imgtwo_div{
-    justify-self: flex-start;
-    align-self: flex-end;
-    width: 170%;
-    padding-bottom: 11.4%;
-    transform: translate(27%);
+    position: absolute;
+    top: 12.5%;
+    right: 2.7%;
+    width: 62.1%;
+    /* transform: translate(-30.1%); */
 }
 .worksldr_imgtwo_pic{
     width: 100%;
@@ -840,72 +843,83 @@ Playfair Display - 400
     height: 100%;
 }
 .work_vwcbtn{
+    font-size: 1.2vw;
     position: absolute;
     /* align-self: flex-end; */
-    left: 0; 
-    right: 0; 
-    top: 0;
-    bottom: 0;
-    margin-top: auto;
-    margin-left: auto; 
-    margin-right: auto; 
-    transform: translate(41px);
+    right: 30.98%; 
+    bottom: 2.89%;
+    width: 18.6%;
+    height: 8.1%;
 }
-.work_slider_cptn{
-    float: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: flex-start; */
-    width: 45%;
+/* TODO:  */
+.work_cptn{
+    position: relative;
+    display: block;
+    height: 100%;
+    flex: 1 1 270px;
+}
+.work_cptn_txtDiv{
+    position: relative;
+    margin-bottom: 14.4vw;
+    margin-left: 1.55%;
 }
 .worksldr_cptnTtl{
     font-family: "Playfair Display";
-    font-size: 48px;
+    font-size: 3.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 64px;
     letter-spacing: 0em;
     text-align: center;
+    margin-bottom: 6%;
+    margin-right: 29.9%;
 }
 .work_slider_txt{
     font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: calc(13px + 0.2vw);
+    
     line-height: 22px;
     color: #0E1B1B;
     width: 100%;
+    max-width: 420px;
     }
 
-    /* .work_sldr_nav{
-    backgrozund: transparent url(../img/svg/work_nav_line.svg) no-repeat;
-    } */
-    .work_sldr_next{
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 25px;
-        color: #0E1B1B;
-        text-decoration: none;
+.work_sldr_nav{
+    position: absolute;
+    display: block;
+    bottom: 1.8%;
+    right: 34%;
+}
+.work_sldr_next{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0E1B1B;
+    text-decoration: none;
 
-        background: transparent url(../img/svg/work_nav_line.svg) no-repeat left center;
-        padding-left: 90px;
-    }
-    .work_sldr_prev{
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 25px;
-        color: #0E1B1B;
-        text-decoration: none;
-        
-        background: transparent url(../img/svg/work_nav_line.svg) no-repeat right center;
-        padding-right: 90px;
-        
-    }
+    position: relative;
+    background: transparent url(../img/svg/work_nav_line.svg) no-repeat left center;
+    padding-left: 90px;
+    margin-bottom: 24.8%;
+}
+.work_sldr_prev{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0E1B1B;
+    text-decoration: none;
+    
+    position: relative;
+    background: transparent url(../img/svg/work_nav_line.svg) no-repeat right center;
+    padding-right: 90px;
+    transform: translate(50px);    
+}
 
 
 
