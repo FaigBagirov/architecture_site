@@ -451,81 +451,54 @@ Playfair Display - 400
   
   /* -------------------- Header start-------------------- */
   .black_bckgrnds{
+      /* display: none; */
     position: absolute;
     width: 100%;
     background-color: #0E1B1B;
 }
-.main_blackbg{
-    position: relative;
-    width: 100%;
-    height: 50vw;
-    max-height: 91vh; 
-    background-color: #0E1B1B;
-}
-.about_blackbg{
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 89.7%;
-    height: 37vw;
-    background-color: #070F0F;
-}
+
+
   .header{
     /* background: linear-gradient(green, black); */
     /* opacity: .5; */
     z-index: 1;
     position: relative;
     width: 100%;
-    padding-top: 2.85vh;
+    padding-top: 1.6vw;
+    padding-bottom: 2.7vw;
+    background-color: #0E1B1B !important;
+    
 }
 .header_wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    /* background-color: grey !important; */
-    /* opacity: 0.3; */
     width: 100%;
-
-}
-.home_left_pane{
-     display: block;
-    /*justify-content: center; */
-
-    /* border: 1px solid rgb(42, 106, 165); */
     
-    /* background-color: grey !important; */
-    width: 20%;
+}
+
+.home_left_pane{
+    display: block;
+    width: calc(50px + 12vw);
+    margin: 0 2.5vw;
+ 
 }
 .social_links{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-left: 2vw;
 }
 .social_link{
     padding: 0 1vw;
 }
-.brand_name{
-    z-index: -1;
-    position: relative;
-    transform: translate(-29px);
-    color: #FFFFFF;
-    font-family: "Open Sans Condensed";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2vw;
-    line-height: 44px;
 
-}
 .home_right_pane{
-    /* border: 1px solid rgb(233, 27, 27); */
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: salmon !important; */
-    width: 70%;
+    width: 71.7vw;
+    margin: 0 4.1vw 0 0;
 }
 .brand_with_line{
     display: flex;
@@ -533,41 +506,50 @@ Playfair Display - 400
     align-items: center;
 }
 .header_line{
-    width: 22.2vw;
+    position: relative;
+    z-index: 1;
+    width: 24.2vw;
     height: 0px;
-    left: 335px;
     border-bottom: 1px solid rgba(255, 201, 75, 0.8);/*#FFC94B;*/
 }
-/* .menu_toggle{
+.brand_name{
+    color: #FFFFFF;
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2vw;
+    line-height: 44px;
 
-} */
-/* body{
-    background-color: skyblue !important;
-    border: 1px solid red;
-} */
-
+    position: relative;
+    transform: translate(-2vw);
+}
+.menu_toggle > img{
+    width: 3.35vw;
+}
 /* -------------------- Header end-------------------- */
 /* -------------------- Main start-------------------- */
-
-
 .main{
     width: 100%;
 }
 .home_section{
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
-
 .main_wrapper{
+    position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     height: auto;
+    margin: 0 auto;
 }
-
+.main_caption{
+    width: calc(50px + 12vw);
+    margin: 0 2.5vw;
+}
 .main_logo{
-    position: relative;
+    /* position: absolute; */
     margin-top: -10px;
     margin-left: 45px;
     opacity: 0;
@@ -579,61 +561,82 @@ Playfair Display - 400
 .main_title_div{
     position: relative;
     z-index: 1;
-    margin-left: 37%;
+    /* margin-left: 36%; */
+    left: 6.79vw;
+    margin-top: 10.6vw;
 }
 .main_title{
     font-family: "Playfair Display";
-    font-size: 60px;
+    font-size: 4.1vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 80px;
+    line-height: 5.5vw;
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
 }
+.main_blackbg{
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    /* height: calc(30px + 36vw); */
+    /* height: clamp(50px, 38vw,  80vh); */
+    height: 38vw; 
+    background-color: #0E1B1B;
+}
+
 .slider_nav{
     position: relative;
-    /* outline: 2px dotted green;
-    background-color: red; */
-    display: inline-block;
-    margin-top: 9.5vh;
-    width: 80%;
-    height: 20px;
-    height: auto;
+    /* outline: 2px dotted green;*/
+    display: block;
+    margin: 5.5vw auto 0;
+    width: calc(50px + 16vw);
+    left: 4.1vw;
 }
-.slider_nav  a{
-    margin: 37px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slider_nav > div{
+    /* margin: 30px; */
+    /* white-space: nowrap; */
     text-decoration: none;
-
-}
-.slider_nav  p{
-    padding: 0 20px;
-
 }
 
-.slider_nav_txt{
+.slider_nav p{
     font-family: "Open Sans";
-    font-size: 18px;
+    font-size: calc(12px + 0.42vw);
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
     color: #FFC94B;
+
+    display: inline-block; 
+    margin: 0 12px
+    /* flex: 0 1 10px; */
+}
+.slider_nav_next{
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    /* margin-left: 69px; */
+}
+.slider_nav_prev{
+    display: flex;
+    align-items: center;
+    margin-left: 2.8vw;
 }
 .slider_nav_line{
-    width: 105px;
-    height: 0px;
-    border-bottom: 1px solid rgba(255, 201, 75, 0.8);/*#FFC94B;*/
-    /* transform: rotate(90deg); */
+    position: relative;
+    width: 5.4vw;
+    display: inline-block; 
+    height: 1px;
+    background-color: rgba(255, 201, 75, 1);/*#FFC94B;*/
+    top: 50%;
+    margin: auto 0;
 }
-.main_pic_div{
-    width: auto;
-    padding-top: 4.65vh;
-    width: 65.2vw;
+.main_slider{
+    width: 71.7vw;
+    margin: 0 4.1vw 0 0;
 }
 
 .home_pic{
@@ -642,63 +645,91 @@ Playfair Display - 400
 }
 
 .about_section{
-    display: flex;
-    justify-content:space-between;
-    width: 89.7%;
-    height: 75vh;
     border: 0;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
 }
+.about_blackbg{
+    z-index: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    top: 0px;
+    width: 90.78%;
+    height: 45.1vw;
+    background-color: #070F0F;
+}
+/* TODO: */
 .about_pic_div{
-    width: auto;
+    position: relative;
+    flex: 0.278 0.278 296;
     border: 0;
-
+    height: 95%;
+    top: 7vw;
 }
 .about_pic{
     position: relative;
     z-index: 1;
-    width: 38.7vw;
     border: 0;
-
+    height: 100%;
+}
+/* TODO: */
+.about_content_wrapper{
+    position: relative;
+    flex: 1 1 627; /*627;*/
+    /* width: 51.7vw; */
 }
 .about_content{
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: flex-end; */
     position: relative;
-    width: 100%;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: stretch;
+    /* align-items: center; */
+    bottom: 0px;
+    /* width: 40%; */
+    margin: 0 auto;
 }
 .about_content h2, .about_content p, .about_content button {
     position: relative;
     z-index: 2;
-    margin: 23px 50px;
+    /* margin: 23px 50px; */
 }
 .abt_ttl_with_line{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 3.2vw;
 
 }
 .about_title, .about_title_line{
-    transform: translate(-225px, 90px);
-
+    transform: translate(-271px, 0px);
 }
 .about_title{
     font-family: "Playfair Display";
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: clamp(50px, 5vw, 60px);
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
     color:#FFFFFF;
+    
+    flex: 1 1 100px;
+    margin: 0 1.5vw 0 0;
 }
 .about_title_line{
     position: relative;
     z-index: 1;
-    width: 275px;
+    flex: 1 1 200px;
     height: 0px;
-    border-bottom: 2px solid #FFC94B;
+    border-bottom: 3px solid #FFC94B;
 }
 
 .about_smalltxt{
@@ -710,6 +741,8 @@ Playfair Display - 400
     letter-spacing: 0em;
     text-align: left;
     color: #C4C4C4;
+
+    margin-bottom: 3vw;
 }
 
 .about_mediumtxt{
@@ -721,15 +754,12 @@ Playfair Display - 400
     letter-spacing: 0em;
     text-align: left;
     color: #6B6B6B;
+    /* color:rgb(14, 13, 13); */
+    /* text-shadow: -1px 1px rgb(14, 13, 13); */
+    margin-bottom: 3.4vw;
 
 }
 .yellow_btn{
-    position: relative;
-    z-index: 1;
-    width: 170px;
-    height: 45px;
-    background: #FFC94B;
-    border: 0;
     font-family: "Playfair Display";
     font-size: 18px;
     font-style: normal;
@@ -740,13 +770,20 @@ Playfair Display - 400
     color: rgba(0, 0, 0, 1);
     text-decoration: underline;
     text-decoration-color: #bf9738;
-}
 
+    position: relative;
+    z-index: 1;
+    width: 170px;
+    height: 45px;
+    background: #FFC94B;
+    border: 0;
+}
 .about_rdmbtn:hover{
     /* text-decoration: underline; */
     background: rgba(255, 201, 75, 0.8);
 }
 .work_section{
+    position: relative;
     /* margin-bottom: 138px; */
     margin: 0 20px 138px 20px;
 }
@@ -799,7 +836,7 @@ Playfair Display - 400
     /* display: flex; */
     padding: 15px;
     /* width: 75%; */
-    flex: 1.1 1.1 600px;
+    flex: 1.1 1.1 627px;
 
 }  
 .wrk_imgOneAndcntr{ 
@@ -851,12 +888,11 @@ Playfair Display - 400
     width: 18.6%;
     height: 8.1%;
 }
-/* TODO:  */
 .work_cptn{
     position: relative;
     display: block;
     height: 100%;
-    flex: 1 1 270px;
+    flex: 1 1 326px;
 }
 .work_cptn_txtDiv{
     position: relative;
@@ -1020,6 +1056,7 @@ Playfair Display - 400
 
 /* -------------------- Blogs start-------------------- */
 .blogs_section{
+    display: none;
     /* padding-left: 100px;
     padding-right: 100px; */
     position: relative;
@@ -1253,3 +1290,47 @@ Playfair Display - 400
 * * * * * * * { outline: 1px solid orange }
 * * * * * * * * { outline: 1px solid blue } */
 /* -------------------- Outlines end-------------------- */
+ 
+@media only screen and (max-width: 992px){
+    .about_section{
+        width: 90vw;
+        margin: 0px auto
+    }
+    .about_blackbg{
+        flex-wrap: wrap-reverse;
+         width: 100%;
+         height: 100%;
+    }
+    
+    .about_content{
+        align-items: center;
+        margin: 0 2vw;
+    }
+    .about_title, .about_title_line{
+        transform: translate(0px, 0px);
+        margin-bottom: 1.7vw;
+    }
+    .about_content p{
+        text-align: center;
+        
+    }
+    .about_pic_div{
+        margin: auto;
+        /* top: 10%; */
+        height: 60vw;
+        width: 80vw;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .about_pic{
+        width: 100vw;
+
+    }
+
+    .about_rdmbtn{
+        
+        position: static;
+        margin: auto;
+        
+    }
+}

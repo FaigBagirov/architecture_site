@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/global.css"> 
-
+    <script src="./scripts/script.js"></script>
     <title>Architecture</title>
 </head>
 <body>
-    <div class="black_bckgrnds">
+    <!-- <div class="black_bckgrnds">
         <div class="main_blackbg"></div>
         <div class="about_blackbg"></div>
-    </div>
+    </div> -->
 
 
     <header class="header"> 
         <div class="header_wrapper">
 
-            <div class="hedr home_left_pane">
+            <div class="headr home_left_pane">
                 <div class="social_links">
                     <a fref="faceb_link" class="social_link">
-                        <img src="./img/svg/faceb_icon.svg" alt="Facebook link" class="menu_toggler_pic">
+                        <img src="./img/svg/faceb_icon.svg" 
+                        alt="Facebook link" 
+                        class="menu_toggler_pic">
                     </a>
                     <a href="faceb_link" class="social_link">
-                        <img src="./img/svg/insta_icon.svg" alt="Instagram link" class="menu_toggler_pic">
+                        <img src="./img/svg/insta_icon.svg" 
+                        alt="Instagram link" 
+                        class="menu_toggler_pic">
                     </a>
                 </div>
             </div>
@@ -35,7 +39,9 @@
                 </div>
 
                 <div class="menu_toggle">
-                    <img src="./img/svg/menu_toggler.svg" alt="Open the menu" class="menu_toggler_pic">
+                    <img src="./img/svg/menu_toggler.svg" 
+                    alt="Open the menu" 
+                    class="menu_toggler_pic">
                 </div>
                     <!-- <nav class="header_nav" >
                         <ul class="header_nav_menu">
@@ -46,13 +52,17 @@
                                 <a href="" class="header_nav_link">Our DNA</a>
                             </li>
                             <li class="header_nav_item">
-                                <a href="" class="header_nav_link">Selected Work</a>
+                                <a href="" class="header_nav_link">
+                                    Selected Work
+                                </a>
                             </li>
                             <li class="header_nav_item">
                                 <a href="" class="header_nav_link">Why Us</a>
                             </li>
                             <li class="header_nav_item">
-                                <a href="" class="header_nav_link">Lataste Blogs</a>
+                                <a href="" class="header_nav_link">
+                                    Lataste Blogs
+                                </a>
                             </li>
                         </ul>
                     </nav> -->
@@ -63,12 +73,15 @@
     <main class="main">
         <section class="home_section">
             <div class="main_wrapper">
-                <div class="mn home_left_pane">
-                    <div class="main_logo">
+                
+                <div class="mn main_caption">
+                    <!-- <div class="main_logo">
                         <a href="/" class="main_logo_link">
-                            <img src="./img/svg/architecture_logo.svg" alt="Architecture Studio" class="main_logo_pic">
+                            <img src="./img/svg/architecture_logo.svg" 
+                            alt="Architecture Studio" 
+                            class="main_logo_pic">
                         </a>
-                    </div> 
+                    </div>  -->
 
                     <div class="main_title_div">
                         <h1 class="main_title">
@@ -77,49 +90,61 @@
                     </div>
 
                     <div class="slider_nav">
-                        <a href="" class="slider_nav_next">
-                        <div class="slider_nav_line"></div>
-                        <p class="slider_nav_txt">Next</p>
-                        </a>
-
-                        <a href="" class="slider_nav_prev">
-                        <p class="slider_nav_txt">Prev</p>
-                        <div class="slider_nav_line"></div>
-                        </a>
+                        <div href="" class="slider_nav_next">
+                          <div class="slider_nav_line"></div>
+                           <p class="slider_nav_txt">Next</p>
+                        </div>
+    
+                        <div href="" class="slider_nav_prev">
+                          <p class="slider_nav_txt">Prev</p>
+                          <div class="slider_nav_line"></div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="mn home_right_pane">
+                <div class="main_slider">
                     <div class="main_pic_div">
-                        <img src="./img/home_pic.jpg" alt="Amazing Brand" class="home_pic">
+                        <img src="./img/home_pic.jpg" 
+                        alt="Amazing Brand" 
+                        class="home_pic">
                     </div> 
                 </div>
 
 
             </div>
+            <div class="main_blackbg"></div>
 
         </section>
 
         <section class="about_section">
-            <div class="about_pic_div">
-                <img src="./img/about_pic.jpg" alt="Our Approach" class="about_pic">
-            </div>
-
-            <div class="about_content">
-                <div class="abt_ttl_with_line">
-                    <h2 class="about_title">Our Approach</h2>
-                    <div class="about_title_line"></div>   
+            <div class="about_blackbg">
+                <div class="about_pic_div">
+                    <img src="./img/about_pic.jpg" 
+                    alt="Our Approach" 
+                    class="about_pic"
+                    >
                 </div>
-                <p class="about_smalltxt">
-                    To choose a right approach is to be halfway ahead of others 
-                    who do not choose it at all. Everyone has his own individual taste, 
-                    but there is still limited list of styles and approaches.
-                </p>
-                <p class="about_mediumtxt">Refined design, harmony of colors and shapes. We ourselves enjoy our own work.</p>
-                <button class="about_rdmbtn yellow_btn">Read More</button>
+                <div class="about_content_wrapper">
+                    <div class="about_content">
+                        <div class="abt_ttl_with_line">
+                            <h2 class="about_title">Our Approach</h2>
+                            <div class="about_title_line"></div>   
+                        </div>
+                        <p class="about_smalltxt">
+                            To choose a right approach is to be halfway ahead of 
+                            others who do not choose it at all. Everyone has his 
+                            own individual taste, but there is still limited list of
+                            styles and approaches.
+                        </p>
+                        <p class="about_mediumtxt">Refined design, harmony of 
+                            colors and shapes. We ourselves enjoy our own work.</p>
+                        <button class="about_rdmbtn yellow_btn">Read More</button>
+                    </div>
+                </div>
             </div>
+            <!-- <div class="about_blackbg"></div> -->
         </section>
-
+        
         <section class="work_section">
             <div class="work_title_div">
                 <h2 class="work_title">
@@ -128,9 +153,11 @@
 
                 <div class="work_title_note_div">
                     <p class="work_title_notetxt">
-                        There are some of our works that we are glad to introduce to the public. 
-                        If that's not enough, and you want to see more of our works please contact us by email. 
-                        We can conduct a personal presentation for our piotential clients. 
+                        There are some of our works that we are glad to 
+                        introduce to the public. If that's not enough, and you 
+                        want to see more of our works please contact us by 
+                        email. We can conduct a personal presentation for our 
+                        piotential clients. 
                     </p>
                 </div>
             </div>
@@ -142,15 +169,23 @@
                                 01
                             </p>
     
-                            <img src="./img/wrkImgOne_01.jpg" alt="Louis Vuitton" class="worksldr_imgone_pic">   
+                            <img src="./img/wrkImgOne_01.jpg" 
+                            alt="Louis Vuitton" 
+                            class="worksldr_imgone_pic"
+                            >   
                         </div>
     
     
                         <div class="worksldr_imgtwo_div">
-                            <img src="./img/wrkImgTwo_01.jpg" alt="Louis Vuitton" class="worksldr_imgtwo_pic">
+                            <img src="./img/wrkImgTwo_01.jpg" 
+                            alt="Louis Vuitton" 
+                            class="worksldr_imgtwo_pic"
+                            >
                         </div>
                         <!-- <div class="wrk_vwcbtn_div"> -->
-                            <button class="work_vwcbtn yellow_btn">View Case</button>
+                            <button class="work_vwcbtn yellow_btn">
+                                View Case
+                            </button>
                         <!-- </div> -->
     
                     </div>
@@ -162,16 +197,21 @@
                             </h2>
         
                             <p class="work_slider_txt">
-                                Amet eu facilisi posuere ut at cras non ipsum proin nunc 
-                                purus tellus ultricies velit elementum ut dui sed augue 
-                                ultrices phasellus ullamcorper condimentum ut suspendisse 
-                                viverra ornare sit venenatis
+                                Amet eu facilisi posuere ut at cras non ipsum 
+                                proin nunc purus tellus ultricies velit 
+                                elementum ut dui sed augue ultrices phasellus 
+                                ullamcorper condimentum ut suspendisse viverra 
+                                ornare sit venenatis
                             </p>
                         </div>
                         
                         <div class="work_sldr_nav">
-                            <a href="/" class="work_sldr_nav work_sldr_next">Next</a>
-                            <a href="/" class="work_sldr_nav work_sldr_prev">Prev</a>
+                            <a href="/" class="work_sldr_nav work_sldr_next">
+                                Next
+                            </a>
+                            <a href="/" class="work_sldr_nav work_sldr_prev">
+                                Prev
+                            </a>
                         </div>
 
     
@@ -188,23 +228,30 @@
                         <div class="whyus_text">
                             <h2>Why Us</h2>
                             <p>
-                                Amet eu facilisi posuere ut at cras non ipsum proin 
-                                nunc purus tellus ultricies velit elementum ut dui 
-                                sed augue ultrices phasellus ullamcorper condimentum 
-                                ut suspendisse viverra ornare sit venenatis
+                                Amet eu facilisi posuere ut at cras non ipsum 
+                                proin nunc purus tellus ultricies velit 
+                                elementum ut dui sed augue ultrices phasellus 
+                                ullamcorper condimentum ut suspendisse viverra 
+                                ornare sit venenatis
                             </p>
                         </div>
                         <div class="whyus_pros">
                             <div class="whyus_pro1">
-                                <img src="./img/svg/pro1.svg" alt="Eco-Friendly" class="whyus_pros_icon">
+                                <img src="./img/svg/pro1.svg" 
+                                alt="Eco-Friendly" 
+                                class="whyus_pros_icon">
                             </div>
 
                             <div class="whyus_pro2">
-                                <img src="./img/svg/pro2.svg" alt="Durable" class="whyus_pros_icon">
+                                <img src="./img/svg/pro2.svg" 
+                                alt="Durable" 
+                                class="whyus_pros_icon">
                             </div> 
 
                             <div class="whyus_pro3">
-                                <img src="./img/svg/pro3.svg" alt="24*7 Support" class="whyus_pros_icon">
+                                <img src="./img/svg/pro3.svg" 
+                                alt="24*7 Support" 
+                                class="whyus_pros_icon">
                             </div>                            
                         </div>
 
@@ -239,7 +286,10 @@
                                     <p>Intirior</p>
                                 </div>
                                 <div class="blog_cptn">
-                                    <p>Amet eu facilisi posuere ut at cras non ipsum proin</p>
+                                    <p>
+                                        Amet eu facilisi posuere ut at cras non 
+                                        ipsum proin
+                                    </p>
                                 </div>
                             </div>
 
@@ -251,7 +301,10 @@
                                     <p>Intirior</p>
                                 </div>
                                 <div class="blog_cptn">
-                                    <p>Amet eu facilisi posuere ut at cras non ipsum proin</p>
+                                    <p>
+                                        Amet eu facilisi posuere ut at cras non 
+                                        ipsum proin
+                                    </p>
                                 </div>
                             </div>
 
@@ -263,7 +316,9 @@
                                     <p>Intirior</p>
                                 </div>
                                 <div class="blog_cptn">
-                                    <p>Amet eu facilisi posuere ut at cras non ipsum proin</p>
+                                    <p>Amet eu facilisi posuere ut at cras non 
+                                        ipsum proin
+                                    </p>
                                 </div>
                             </div>
                            
@@ -278,7 +333,9 @@
 
         <section class="clients">
             <div class="clients_icons_div">
-                <img src="./img/svg/clients_icons.svg" alt="Facebook link" class="menu_toggler_pic">
+                <img src="./img/svg/clients_icons.svg" 
+                alt="Facebook link" 
+                class="menu_toggler_pic">
 
             </div>
             <div class="clients_title_div">
@@ -305,5 +362,7 @@
             <a href="" class="footer_txt">Baku, Azerbaijan</a>
         </div>
     </footer>
+
+
 </body>
 </html>  
