@@ -9,14 +9,13 @@
 </head>
 <body>
     <!-- <div class="black_bckgrnds">
-        <div class="main_blackbg"></div>
+        <div class="home_blackbg"></div>
         <div class="about_blackbg"></div>
     </div> -->
 
 
     <header class="header"> 
         <div class="header_wrapper">
-
             <div class="headr home_left_pane">
                 <div class="social_links">
                     <a fref="faceb_link" class="social_link">
@@ -43,81 +42,63 @@
                     alt="Open the menu" 
                     class="menu_toggler_pic">
                 </div>
-                    <!-- <nav class="header_nav" >
-                        <ul class="header_nav_menu">
-                            <li class="header_nav_item">
-                                <a href="" class="header_nav_link">Home</a>
-                            </li>
-                            <li class="header_nav_item">
-                                <a href="" class="header_nav_link">Our DNA</a>
-                            </li>
-                            <li class="header_nav_item">
-                                <a href="" class="header_nav_link">
-                                    Selected Work
-                                </a>
-                            </li>
-                            <li class="header_nav_item">
-                                <a href="" class="header_nav_link">Why Us</a>
-                            </li>
-                            <li class="header_nav_item">
-                                <a href="" class="header_nav_link">
-                                    Lataste Blogs
-                                </a>
-                            </li>
-                        </ul>
-                    </nav> -->
+                    
             </div>
         </div>  
     </header>
 
     <main class="main">
         <section class="home_section">
-            <div class="main_wrapper">
-                
-                <div class="mn main_caption">
-                    <!-- <div class="main_logo">
-                        <a href="/" class="main_logo_link">
-                            <img src="./img/svg/architecture_logo.svg" 
-                            alt="Architecture Studio" 
-                            class="main_logo_pic">
-                        </a>
-                    </div>  -->
+            <div class="home_blackbg">
+                <div class="main_wrapper">
+                    
+                    <div class="mn main_caption">
+                        <!-- <div class="main_logo">
+                            <a href="/" class="main_logo_link">
+                                <img src="./img/svg/architecture_logo.svg" 
+                                alt="Architecture Studio" 
+                                class="main_logo_pic">
+                            </a>
+                        </div>  -->
 
-                    <div class="main_title_div">
-                        <h1 class="main_title">
-                            Architecture Studio
-                        </h1>
+                            <h1 class="main_title">
+                                Architecture Studio
+                            </h1>
+
+                        <div class="slider_nav">
+                            <div href="" class="slider_nav_next">
+                            <div class="slider_nav_line"></div>
+                            <p class="slider_nav_txt">Next</p>
+                            </div>
+        
+                            <div href="" class="slider_nav_prev">
+                            <p class="slider_nav_txt">Prev</p>
+                            <div class="slider_nav_line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="home_slider">
+                        <div class="home_pic_div">
+                            <img src="./img/home_pic.jpg" 
+                            loading="eager"
+                            alt="Amazing Brand" 
+                            class="home_pic"
+                            style="width: 100%"
+                            >
+                        </div> 
                     </div>
 
-                    <div class="slider_nav">
-                        <div href="" class="slider_nav_next">
-                          <div class="slider_nav_line"></div>
-                           <p class="slider_nav_txt">Next</p>
-                        </div>
-    
-                        <div href="" class="slider_nav_prev">
-                          <p class="slider_nav_txt">Prev</p>
-                          <div class="slider_nav_line"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="main_slider">
-                    <div class="main_pic_div">
-                        <img src="./img/home_pic.jpg" 
-                        alt="Amazing Brand" 
-                        class="home_pic">
-                    </div> 
-                </div>
 
-
+                </div>
             </div>
-            <div class="main_blackbg"></div>
+            <!-- <div class="home_blackbg"></div> -->
 
         </section>
 
         <section class="about_section">
             <div class="about_blackbg">
+                <!-- TODO: add parallax effet here, to scroll over this image like it's a background -->
                 <div class="about_pic_div">
                     <img src="./img/about_pic.jpg" 
                     alt="Our Approach" 
@@ -125,19 +106,21 @@
                     >
                 </div>
                 <div class="about_content_wrapper">
+                    <div class="about_frame"></div>
                     <div class="about_content">
                         <div class="abt_ttl_with_line">
-                            <h2 class="about_title">Our Approach</h2>
-                            <div class="about_title_line"></div>   
+                            <h2 class="about_title"><span>Our Approach</span></h2>
+                            <!-- <div class="about_title_line"></div>    -->
                         </div>
+                        <!-- TODO: write js code for expanding this text by adding "expand_text" class -->
                         <p class="about_smalltxt">
                             To choose a right approach is to be halfway ahead of 
                             others who do not choose it at all. Everyone has his 
-                            own individual taste, but there is still limited list of
+                            own individual taste, but there is still limited list of common
                             styles and approaches.
                         </p>
-                        <p class="about_mediumtxt">Refined design, harmony of 
-                            colors and shapes. We ourselves enjoy our own work.</p>
+                        <p id="abmt" class="about_mediumtxt">Refined design, harmony between  
+                            colors and shapes.</p>
                         <button class="about_rdmbtn yellow_btn">Read More</button>
                     </div>
                 </div>
@@ -145,7 +128,7 @@
             <!-- <div class="about_blackbg"></div> -->
         </section>
         
-        <section class="work_section">
+        <section class="work_section" >
             <div class="work_title_div">
                 <h2 class="work_title">
                     Selected Work
@@ -221,7 +204,7 @@
 
         </section>
 
-        <section class="whyus_section">
+        <section class="whyus_section" style="display: none;">
             <div class="whyus_wrapper">
                 <div class="whyus_content">
                     <div class="whyus_blackbg">
@@ -270,7 +253,7 @@
  
         </section>
 
-        <section class="blogs_section">
+        <section class="blogs_section" style="display: none;">
             <div class="blogs_wrapper">
                 <div class="blogs_content">
                     <div class="blogs_blackbg">
@@ -331,7 +314,7 @@
  
         </section>
 
-        <section class="clients">
+        <section class="clients" style="display: none;" >
             <div class="clients_icons_div">
                 <img src="./img/svg/clients_icons.svg" 
                 alt="Facebook link" 
@@ -344,7 +327,7 @@
             </div>
         </section>
     </main>
-    <footer class="theFooter">
+    <footer class="theFooter" style="display: none;">
         <p>Copyright 2021</p>
         
         <div class="footer_brand-line">
