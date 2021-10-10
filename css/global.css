@@ -536,7 +536,7 @@ Playfair Display - 400
     height: auto;
 }
 .home_blackbg{
-    z-index: -1;
+    /* z-index: 1; */
     position: relative;
     width: 100%;
     /* height: 100%; */
@@ -707,7 +707,6 @@ Playfair Display - 400
 .abt_ttl_with_line{
     position: relative;
     z-index: 1;
-
     display: flex;
     justify-items: stretch;
     align-items: center;
@@ -810,24 +809,47 @@ Playfair Display - 400
 }
 
 .work_title_div{
-    width: auto;
+    width: 100%;
+
 }
+/* .wrk_ttl_with_line{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 0px 14.9vw;
+
+} */
 .work_title{
     font-family: "Playfair Display";
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: clamp(16px, 8vw,60px);
+
     font-style: normal;
     font-weight: 400;
     line-height: 80px;
     letter-spacing: 0em;
     text-align: left;
     color: rgba(14, 27, 27, 1);
-    background: transparent url(../img/svg/workTitleLine.svg) no-repeat left center;
+    /* background: transparent url(../img/svg/workTitleLine.svg) no-repeat left center; */
     background-size: 305px;
     border: 0;
     margin-bottom: 26px;
-    padding-left: 325px;
+    /* padding-left: 325px; */
 }
-
+.work_title::after{
+    position: relative;
+    display: inline-block;
+    background-color: rgba(14, 27, 27, 1);
+    content:"";
+    /* right: 0; */
+    height: 3px;
+    /* z-index: 10; */
+    width: 300px;
+    vertical-align: middle;
+    flex: 1 1 300px;
+}
 .work_title_notetxt{
     font-family: "Open Sans";
     font-size: 16px;
@@ -895,19 +917,24 @@ Playfair Display - 400
     width: 100%;
 
 }
-.wrk_vwcbtn_div{
+/* .wrk_vwcbtn_div{
     position: absolute;
     width: 100%;
     height: 100%;
-}
+} */
 .work_vwcbtn{
-    font-size: 1.2vw;
+    font-size: clamp(14px, 2vw, 20px);
     position: absolute;
     /* align-self: flex-end; */
-    right: 30.98%; 
+    margin-left: 4.7vw;
     bottom: 2.89%;
-    width: 18.6%;
+    width: calc(70px + 7vw);
+    height: calc(25px + 1.4vw);
+    /* width: 18.6%;
+    min-width: 100px;
     height: 8.1%;
+    min-height: 26px; */
+    white-space: nowrap;
 }
 .work_cptn{
     position: relative;
@@ -920,18 +947,28 @@ Playfair Display - 400
     margin-bottom: 14.4vw;
     margin-left: 1.55%;
 }
+.work_slider_link{
+    text-decoration: none;
+    /* display: none; */
+}
 .worksldr_cptnTtl{
+
     font-family: "Playfair Display";
     font-size: 3.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 64px;
     letter-spacing: 0em;
+    color: #0E1B1B;
+    text-decoration: none;
     text-align: center;
+    white-space: nowrap;
+
     margin-bottom: 6%;
     margin-right: 29.9%;
 }
 .work_slider_txt{
+    color: #0E1B1B;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
@@ -983,8 +1020,8 @@ Playfair Display - 400
 /* -------------------- Why Us start-------------------- */
 .whyus_section{
     clear: left;
-    padding-left: 100px;
-    padding-right: 100px;
+    /* padding-left: 100px; */
+    padding-right: 6.95vw;
     position: relative;
     height: auto;
     margin-top: 0;
@@ -998,92 +1035,130 @@ Playfair Display - 400
 .whyus_content{
     position: relative;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: flex-end;
     /* width: 1240px; */
-    height: 100%;
+    height: 367px;
+    /* height: 100%; */
     margin: 0 auto;
 }
 .whyus_blackbg{
     position: relative;
-    display: flex;
-    justify-content: space-around;
-    width: 1040px;
-    height: 367px;
-    right: 0;
-    left: auto;
+    /* display: flex;
+    align-items: flex-end; */
+    /* flex-wrap: nowrap; */
+    /* justify-items: space-around; */
+        /* right: 0; */
+    /* left: auto; */
+    width: 72.2vw;
+    height: 25.5vw;
     background-color: #0E1B1B;
 }
-.whyus_text{
+.whyus_text_div{
     position: absolute;
-    width: 600px;
-    top: 35px;
+    display: inline-block;
+
+    width: 100%;
+    top: 3vw;
+    padding: 0px 2.4vw;
 
 }
-.whyus_text h2{
+
+.whyus_text_div h2{
     font-family: "Playfair Display";
-    font-size: 60px;
+    font-size: calc(24px + 2.5vw);
     font-style: normal;
     font-weight: 400;
-    line-height: 80px;
+    line-height: calc(28px + 2.5vw);
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
 
-    background: transparent url(../img/svg/white_line.svg) no-repeat left center;
-    padding-left: 325px;
-    /* transform: translate(-25%); */
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.2vw;
+    /* margin-left: 200px; */
 }
-.whyus_text p{
+.whyus_text_div h2:before{
+    content: "";
+    border-top: 3px solid white;
+    width: 21.2vw;
+    margin-right: 1.4vw;
+}
+.whyus_p_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.whyus_text_div p{
     font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: calc(12px + 0.28vw);
+    line-height: calc(16px + 0.45vw);
     color: #C4C4C4;
+
+    flex: 1 0 68.02%;
+    margin-left: 13.9vw;
+    vertical-align: top;
+}
+.whyus_p_dummy{
+    flex: 0 0 76px ;
 }
 .whyus_pros{
     position: relative;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    display: inline-block;
+    /* flex:  0 0 700px; */
+    flex-wrap: nowrap;
+    /*justify-content: flex-start;
+    align-items: flex-end; */
     width: 100%;    
-}
-.whyus_pro1{
-    padding: 0;
-    margin: 0;
+    padding-left: 15.4vw;
 }
 .whyus_pros_icon{
     position: relative;
-    transform: translatey(50%);
+    padding: 0;
+    box-shadow: 0px 0px 2vw rgba(0, 0, 0, 0.1);
+    margin: 0px 0.91vw;
+    transform: translatey(-41.6%);
+    width: 11.8vw;
+    
 }
 .yellow_sqr{
-    position: absolute;
+    z-index: 1;
+    position: relative;
     display: flex;
     align-items: center;
-
-    width: 370px;
-    height: 354px;
-    padding: 39px;
+    /* flex: 0 0 370px; */
+    width: 25.7vw;
+    height: 24.5vw;
+    padding: 0.7vw 2.5vw 0.7px;
     background: #FFC94B;
-    left: 0;
-    bottom: 0;
+    left: -13.9vw; 
+    bottom: -10.8vw;
 }
 
 .yellow_sqr p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(11px + 0.28vw);
+    line-height: calc(16px + 0.45vw);
     text-align: center;
+
+    /* Dark */
+
+    color: #0E1B1B;
 }
 /* -------------------- Why Us end-------------------- */
 
 /* -------------------- Blogs start-------------------- */
 .blogs_section{
-    display: none;
-    /* padding-left: 100px;
-    padding-right: 100px; */
     position: relative;
     height: 509px;
-    margin-bottom: 226px;
-}
+    margin-bottom: 223px;
+} 
 .blogs_wrapper{
     position: relative;
     /* padding: 100px 0; */
@@ -1092,28 +1167,27 @@ Playfair Display - 400
     position: relative;
     display: flex;
     justify-content: flex-start;
-    width: 1240px;
+    width: 85.8vw;
     height: 100%;
     /* margin: 0 auto; */
 }
 .blogs_blackbg{
     position: relative;
-    display: flex;
-    justify-content: space-around;
-    width: 1236px;
-    height: 445px;
+    /* display: flex;
+    justify-content: space-around; */
+    width: 100%;
+    height: 30.9vw;
     right: 0;
     left: auto;
     background-color: #0E1B1B;
 }
-.blogs_text{
+.blogs_title{
     position: absolute;
-    width: 680px;
-    top: 35px;
-
+    /* width: 680px; */
+    top: 3.2vw;
     left: 0;
 }
-.blogs_text h2{
+.blogs_title h2{
     font-family: "Playfair Display";
     font-size: 60px;
     font-style: normal;
@@ -1123,38 +1197,63 @@ Playfair Display - 400
     text-align: left;
     color: #FFFFFF;
 
-    background: transparent url(../img/svg/white_line.svg) no-repeat left center;
-    padding-left: 325px;
+    display: flex;
+    align-items: center;
+    /* background: transparent url(../img/svg/white_line.svg) no-repeat left center; */
+    /* padding-left: 325px; */
     
     /* transform: translate(-25%); */
 }
+.blogs_title h2:before{
+    content: "";
+    border-top: 3px solid white;
+    width: 18.7vw;
+    margin-right: 1.4vw;
+}
 .blogs_cards{
     position: relative;
+    left: 0.35vw;
+    bottom: -2.55vw;
     display: flex;
-    justify-content: center;
+    /* display: inline-block; */
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-items: flex-end;
     align-items: flex-end;
-    width: 100%;    
-    transform: translate(69px);
+    width: 97.1%;    
+    transform: translate(114px);
     
 }
 .blog_card{
+    /* display: inline-block; */
+
     position: relative;
-    transform: translatey(50%);
-    height: 488px;
-    width: 370px;
+    flex: 0 0 25.7vw; 
+    transform: translatey(37%);
+    /* height: 33.8vw; */
+    /* width: 10vw; */
     margin: 0 auto;
     /* margin-bottom: 100px; */
 }
-.blogs_pic{
-    position: relative;
+/* .blog_pic {
+    width: 100%;
+    position: relative; 
+} */
+
+.blog_pic > img{
+    /* display: none; */
+    width: 100%;
+
+    /* position: relative; */
 }
 
 .blog_label{
     position: absolute;
     display: flex;
     background-color: #FFC94B;
-    top: 0px;
-    margin: 24px 17px;
+    top: 1.75vw;
+    left: 1.2vw;
+    /* margin: 24px 17px; */
     justify-content: center;
     align-items: center;
     height: 26px;
@@ -1173,59 +1272,74 @@ Playfair Display - 400
 }
 .blog_cptn{
     position: absolute;
-    height: 97px;
-    width: 336px;
+    height: 6.74vw;
+    width: 23.3vw;
     background-color: #0E1B1B;
-    margin: 0 17px;
-    transform: translatey(-50%);
-    padding: 17px;
+    left: 1.2vw;
+    transform: translatey(-58%);
+    padding: 1.18vw;
 }
 .blog_cptn p{
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.67vw;
+    line-height: 2.2vw;
     text-align: center;
     color: #FFFFFF;
 }
 .clients{
-    display: grid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+
+    /* justify-items: space-between; */
     /* grid-template-columns: 50% 50%; */
-    grid-template-columns: repeat(auto-fill, 570px);
-    grid-gap: 60px;
-    /* justify-content: flex-start; */
-    padding: 0 100px;
+    /* grid-template-columns: repeat(auto-fill, 570px);
+    gap: 60px; */
+    padding: 0 6.9vw;
     margin-bottom: 118px;
 }
-
-.clients_title_div{
-    display: flex;
-    align-items: center;
+.clients_icons_div img{
+    margin: 0 2.1vw;
 }
+
 .clients_title_div h2{
+    position: relative;
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-size: clamp(45px,5.5vw,60px);
+
     line-height: 80px;
     color: #0E1B1B;
-
+    /* right: 1.85vw; */
+    top: -0.4vw;
     white-space: nowrap;
-    margin-right: 15px;;
+    margin-left: 2vw;
+    
 }
-.clients_txtline{
-    background: transparent url(../img/svg/black_line.svg) no-repeat left center;
-    width: 50%;
+.clients_title_div h2:after{
+    /* z-index: 1; */
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    border-top: 3px solid black;
+    transform: translateY(-0.6vw);
+    width: 305px;
+    margin-left: 1vw;
+    /* background: transparent url(../img/svg/black_line.svg) no-repeat left center; */
+    /* width: 50%;*/
     /* margin-left: 100px; */
-    height: 5px;
+    /* height: 5px; */
 }
 /* -------------------- Blogs end-------------------- */
 
 /* -------------------- Footer start-------------------- */
 .theFooter{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 
@@ -1244,23 +1358,23 @@ Playfair Display - 400
     color: #FFFFFF;
     
     position: absolute;
-    left: 0;
+    left: -2%;
     transform: rotate(-90deg);
 }
-.footer_brand-line{
+.ftr_brand_with_line{
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border-right: 1px solid rgba(255, 201, 75, 0.8); */
 
 }
-.footer_line{
+/* .footer_line{
     z-index: 1;
     width: 213px;
     height: 0px;
-    border-bottom: 1px solid rgba(255, 201, 75, 0.8);/*#FFC94B;*/
-}
-.footer_brand-line h3{
+    border-bottom: 1px solid rgba(255, 201, 75, 0.8);
+} */
+.ftr_brand_with_line h3{
     font-family: "Open Sans Condensed";
     font-style: normal;
     font-weight: bold;
@@ -1268,7 +1382,25 @@ Playfair Display - 400
     line-height: 44px;
     color: #FFFFFF;
     transform: translate(-31px);
+
+    /* display: flex; */
+    /* align-items: center; */
 }
+.ftr_brand_with_line h3:before{
+    /* z-index: 1; */
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    border-top: 3px solid white;
+    width: 305px;
+    margin-right: 1vw;
+    /* background: transparent url(../img/svg/black_line.svg) no-repeat left center; */
+    /* width: 50%;*/
+    /* margin-left: 100px; */
+    /* height: 5px; */
+}
+
 .vert_line{
     height: 86px;
     width: 0;
@@ -1341,11 +1473,12 @@ Playfair Display - 400
         display: none;
     }
     .about_section{
-        z-index: -1;
-        position: absolute;
+        /* z-index: -1; */
         /* top: 65%; */
         width: 100vw;
-        margin: 0px auto
+        /* margin: 0px auto */
+        margin-bottom: 16vw;
+
     }
     .about_blackbg{
         flex-wrap: wrap-reverse;
@@ -1452,4 +1585,111 @@ Playfair Display - 400
         height: 12vw;
         max-height: 45px;
     }
+    .wrk_ttl_with_line{
+        display: flex;
+        align-content: center;
+        padding: 0px 14.9vw;
+    
+    }
+    .work_title{
+        text-align: center;
+        /* font-family: "Playfair Display";
+        font-size: clamp(16px, 8vw,60px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(14, 27, 27, 1);
+        background-size: 305px;
+        border: 0;*/
+        margin-bottom: 0px; 
+        line-height: 0.7em;
+    }
+    .work_title::after{
+        position: relative;
+        display: inline-block;
+        background-color: rgba(14, 27, 27, 1);
+        content:"";
+        /* right: 0; */
+        height: 3px;
+        /* z-index: 10; */
+        width: clamp(50px, 48vw, 300px);
+        vertical-align: middle;
+        flex: 1 1 300px;
+        margin: 0px;
+    }
+
+    .work_title_notetxt{
+        padding: 2vw;
+        margin: 0px auto;
+    }
+    .work_vwcbtn{
+        display: none;
+        width: 18.6%;
+        min-width: 100px;
+        height: 8.1%;
+        min-height: 26px;
+    }
+    .work_slider_link{
+        display: block;
+        position: absolute;
+        
+        
+    }
+    .worksldr_cptnTtl{
+        text-decoration: none;
+        position: absolute;
+        /* left: 50%; */
+        /* top: -17vw; */
+        text-align: start;
+        font-size: clamp(19px, 3vw, 29px);
+    }
+    .worksldr_cptnTtl:hover{
+        text-decoration: underline;
+    }
+    .work_slider_txt{
+        position: absolute;
+        /* left: 50%;*/
+        top: 3.5em; 
+        width: 17em;
+        height:1.52em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: clamp(12px, 2vw, 22px);
+        line-height: calc(18px + 1vw);
+    }
+    .work_sldr_nav{
+        display: none;
+    }
+    .clients{
+        /* display: block; */
+        text-align: center;
+    }
+    .clients_title_div{
+        margin: 0 50vw;
+    }
+    .clients_title_div h2{
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: normal;
+        line-height: 80px;
+        color: #0E1B1B;
+
+        position: relative;
+        display: block;
+        top: -0.4vw;
+        white-space: nowrap;
+        
+    }
+    .clients_title_div h2:after{
+        flex: 1 1 305px;
+        position: relative;
+        content: "";
+        border-top: 3px solid black;
+        display: block;
+        margin-top: 1vw;
+    }
+
 }
