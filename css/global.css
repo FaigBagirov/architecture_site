@@ -1415,7 +1415,7 @@ Playfair Display - 400
 .contacts{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .vert_line{
     height: 86px;
